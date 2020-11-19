@@ -5,6 +5,7 @@
             "includePath": [
                 "C:\\Users\\FECKO\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
                 "C:\\Users\\FECKO\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\**",
+                "D:\\codez\\VscodeCompatable\\Gitoff\\MenuV8\\MEnu_VErsions\\Menu\\**",
                 "${workspaceFolder}/**"
             ],
             "defines": [

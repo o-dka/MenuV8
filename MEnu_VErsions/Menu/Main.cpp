@@ -6,15 +6,16 @@ using namespace std;
 int main() {
   int input;
   cin >> input;
-  switch (input) {
-  case 1:
+  if (input == 1) {
     int x1, y1, z1, d1;
     ChangeTheJ(x1, y1, z1, d1);
-  case 2:
-    int x2, y2, z2, d2, a2;
-    Fibonum(x2, y2, z2, d2, a2); 
-  default:
-    cout << "Something went wrong!" << endl;
   }
+  else if (input == 2) {
+    int x2 =1, y2= 1, z2= 1, d2=1 , a2=1 ;
+    Fibonum(x2, y2, z2, d2, a2);
+    
+  }
+  else
+    cout << "Something went wrong!" << endl;
   return 0;
 }
