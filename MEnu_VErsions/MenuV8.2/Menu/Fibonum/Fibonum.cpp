@@ -1,12 +1,11 @@
 #include "Fibonum.h"
 #include <iostream>
 using namespace std;
-int Fibonum(int count, int presentF, int pastF1, int pastF2, int i) {
-  presentF = 1;
-  pastF1 = 1;
-  pastF2 = 1;
-  i = 3;
+void Fibonum(int count, int presentF, int pastF1, int pastF2, int i) {
   cout << "How much of the fibonachi number you want to see?" << endl;
+  presentF = 1;
+  pastF1 = 1, pastF2 = 1;
+  i = 3;
   cin >> count;
   cout << pastF1 << endl;
   while (i <= count) {
@@ -17,5 +16,4 @@ int Fibonum(int count, int presentF, int pastF1, int pastF2, int i) {
     i++;
   }
   cout << "Here is " << count << " of the fibonachi numbers" << endl;
-  return 0;
 }
