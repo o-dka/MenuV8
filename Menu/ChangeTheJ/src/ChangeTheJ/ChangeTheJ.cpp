@@ -7,12 +7,9 @@ void ChangeTheJ(int divn, int subn, int desn, int curn) {
   cin >> curn;
   cout << "please enter your desired number" << endl;
   cin >> desn;
-  cout << "please enter the number you want to divide you current number to"
-       << endl;
+  cout << "please enter the number you want to divide you current number to"<< endl;
   cin >> divn;
-  cout << "please enter the number you want to subtract your current number "
-          "from "
-       << endl;
+  cout << "please enter the number you want to subtract your current number from "<< endl;
   cin >> subn;
   while (curn != desn) {
     if (curn % divn == 0 && curn / divn >= desn) {

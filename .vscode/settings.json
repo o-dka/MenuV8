@@ -1,7 +1,3 @@
 {
-    "files.associations": {
-        "ostream": "cpp",
-        "iostream": "cpp"
-    },
-    "cmake.sourceDirectory": "${workspaceFolder}/MEnu_VErsions/Menu"
+    "cmake.sourceDirectory": "${workspaceFolder}/Menu"
 }
