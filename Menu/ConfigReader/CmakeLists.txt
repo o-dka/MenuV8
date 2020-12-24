@@ -1,0 +1,6 @@
+add_library{
+    ConfigReader
+    src/ConfigReader/ConfigReader.h
+    src/ConfigReader/ConfigReader.cpp
+}
+target_include_directories(ConfigReader PUBLIC src)

@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-/*paste for ui
+/*
+paste for ui
 cout<<"++++++++++++++++++"<<endl;
 cout<<" 1-               " <<endl;
 cout<<" 2-               "<<endl;
@@ -37,4 +38,4 @@ int main() {
   }
   return 0;
 }
-void Ui() {}
+// void Ui() {}
