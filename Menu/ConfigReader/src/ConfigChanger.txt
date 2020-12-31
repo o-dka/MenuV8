@@ -1,4 +1,0 @@
-True
-false
-40
-test

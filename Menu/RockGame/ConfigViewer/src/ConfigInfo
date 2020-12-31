@@ -1,0 +1,5 @@
+two sets of tocks. (1/0) [bool]- .
+rocks to win(if the second line =1, than this line is a sum of tow sets of rocks). [int]- .
+rocks in the begining. [int]- .
+How much rocks you can add per step. [int]- .
+How much rocks you can multiply per step.(0>n<10) [int]- .

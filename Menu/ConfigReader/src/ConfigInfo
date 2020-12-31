@@ -1,7 +1,0 @@
- 1.two players. true/false
-  2.two sets of tocks. true/false
-      1.rocks to win sum. int
-  3.rocks to win. int
-  4.rocks in the begining. int;
-  5.How much rocks you can add per step. int
-  6.How much rocks you can multiply per step. int
