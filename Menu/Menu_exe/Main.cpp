@@ -27,15 +27,13 @@ int main() {
     } break;
     case 3: {
       cout << "--------------------RockGame--------------------" << endl;
-      // RockGame
+      /*RockMenu
+        
+        -RockGame
+        -Configviewer
+      */ 
      
     } break;
-
-    case 4: {
-      cout << "------------------Config.txt----------------------" << endl;
-      // ConfigReader
-      
-    }break;
     }
   } else if (input == 5) {
     cout << "Goodbye!" << endl;
