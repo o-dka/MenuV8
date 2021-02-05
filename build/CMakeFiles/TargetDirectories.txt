@@ -1,0 +1,5 @@
+D:/codez/VscodeCompatable/Gitoff/MenuV8/build/CMakeFiles/ALL_BUILD.dir
+D:/codez/VscodeCompatable/Gitoff/MenuV8/build/CMakeFiles/ZERO_CHECK.dir
+D:/codez/VscodeCompatable/Gitoff/MenuV8/build/ChangeTheJ/CMakeFiles/ChangeTheJ.dir
+D:/codez/VscodeCompatable/Gitoff/MenuV8/build/Fibonum/CMakeFiles/Fibonum.dir
+D:/codez/VscodeCompatable/Gitoff/MenuV8/build/Menu_exe/CMakeFiles/Menu_Beta.dir
