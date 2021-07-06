@@ -1,0 +1,5 @@
+add_library(
+    DoRock
+    src/DoRock/DoRock.h
+    src/DoRock/DoRock.cpp
+)

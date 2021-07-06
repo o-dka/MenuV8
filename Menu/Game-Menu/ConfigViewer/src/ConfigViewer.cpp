@@ -1,20 +1,24 @@
+#include "ConfigViewer.h"
 #include <fstream>
 #include <iostream>
-#include "ConfigViewer.h"
 using namespace std;
 
-int ConfigViewer(char input,string readChanger, string readChangerInfo) {
-  ifstream fileChanger("ConfigChanger.txt", ios::app);
-  ifstream fileInfo("ConfigInfo", ios::app);
-  while (!fileInfo.eof()&& !fileChanger.eof()) {
-    fileChanger>>readChanger;
-    fileInfo >> readChangerInfo;
-    if (readChangerInfo == ".")
-      cout << readChangerInfo  << readChanger <<'\n'<< endl;
-    else
-      cout << readChangerInfo << " ";
+void ConfigViewer( string readChanger, string readInfo,string filename) {
+  string filenameInfo ="ConfigInfo";
+  ifstream fileChanger(filename.c_str());
+  ifstream fileInfo(filenameInfo.c_str());
+  getline(fileChanger, readChanger);
+  int c = 0;
+  for (int i = 0; i < 12; i++) {
+    if (c == 5)
+      break;
+    getline(fileInfo, readInfo);
+    if (readChanger[i+1] == ' ')
+      cout << readInfo << readChanger[i] << '\n' << endl;
+    else {
+      cout << readInfo << readChanger[i + 1] << readChanger[i + 2 ] << '\n'<< endl;
+      i+=2;
+    }
+    c++;
   }
-  fileChanger.close();
-  fileInfo.close();
-    cout << "Relative path ConfigChanger - ../MenuV8/Menu/ConfigChanger/src/ConfigChanger.txt"<< endl; 
 }

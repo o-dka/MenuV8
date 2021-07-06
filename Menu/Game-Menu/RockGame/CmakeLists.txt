@@ -1,6 +1,0 @@
-add_library(
-    RockGame
-    src/RockGame/RockGame.h
-    src/RockGame/RockGame.cpp
-)
-add_subdirectory(ConfigViewer)
