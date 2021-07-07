@@ -14,10 +14,10 @@ void DoRock( int add, int mult, int first, int second, bool two) {
 		  std::cin >> choose;
   	  switch (choose) {	//if there are two numbers, it ask which to interact with
   	  	case 1:
-      	first += add;
+      		first += add;
       	break;
   	  	case 2:
-      	second += add;
+      		second += add;
       	break;
   	  }
   	}
@@ -31,10 +31,10 @@ void DoRock( int add, int mult, int first, int second, bool two) {
   	  switch (choose) {			//if there are two numbers, it ask which to interact with
   	  	case 1:
   	  	  first =first*mult;
-  	  	  break;
+  	  	break;
   	  	case 2:
   	  	  second=second*mult;
-  	  	  break;
+  	  	break;
   	  }
   	}
   	if (two == 0)
