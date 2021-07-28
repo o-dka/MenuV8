@@ -1,16 +1,35 @@
-#include <iostream>
 #include <fstream>
-#include <string>
-/* 
-Это можно выводить сколько угодно раз но нужна и другая функция.
-Она показывает нам начальную настройку при в входе в  Игру Камней, ровно один раз, дальше она берет и запоминает записали ли мы или нет в другом файле.
-Если в  файле сказано что записано, то настройка не проводится.
-*/
+#include <iostream>
+#include <sstream>
+//
 using namespace std;
-void Writer(string input,string filename,string change,bool status){
-	ifstream file(filename.c_str());
-	getline(file,input);
-	for (int i =0; i < input.length();i++) {
-		
-	}
+void Writer(string input, string filename, string change) {
+  string choose, check;
+  fstream file(filename.c_str());
+  getline(file, input);
+  getline(file, check);
+  if (check == "1") {  // checks if the file has been changed before
+    cout << "Settings changed already, starting.."<< "\n";
+  } else {
+  INPUT:
+    cout << input << endl;
+    cout << "what to change?" << endl;
+    cin >> choose;
+    cout << "what to change to ?" << endl;
+    cin >> change;
+    if ((input.find(choose) < input.length()) && (change.length() == 1))
+      input.replace(input.find(choose), 1, change);
+    if ((input.find(choose) < input.length()) && (change.length() == 2))
+      input.replace(input.find(choose), 2, change);
+    if ((input.find(choose) < input.length()) && (change.length() >2)) {  // possibly will add a few more failsafes, for now there is one
+      cout << "You can't do that!" << endl << endl;
+      goto INPUT;
+    }
+    file.close();
+    file.open("../Configs/ConfigChanger.txt",std::ofstream::out | std::ofstream::trunc);  // deletes contents of a file, writes new ones
+    file << input << "\n";
+    check = "1";
+    file << check;
+    cout << "Changed to :" << endl << input;
+  }
 }

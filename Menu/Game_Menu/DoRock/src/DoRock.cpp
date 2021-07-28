@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
 // #include "ConfigViewer/ConfigViewer.h"
-//  
+//  string filename = "../Configs/ConfigChanger.txt";
 void DoRock( int add, int mult, int first, int second, bool two) {
   int choose, entry;
   std::cout << "What to do?" << "\n";

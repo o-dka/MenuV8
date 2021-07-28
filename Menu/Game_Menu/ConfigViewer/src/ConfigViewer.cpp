@@ -4,7 +4,7 @@
 using namespace std;
 
 void ConfigViewer( string readChanger, string readInfo,string filename) {
-  string filenameInfo ="ConfigInfo";
+  string filenameInfo ="../Configs/ConfigInfo";
   ifstream fileChanger(filename.c_str());
   ifstream fileInfo(filenameInfo.c_str());
   getline(fileChanger, readChanger);
