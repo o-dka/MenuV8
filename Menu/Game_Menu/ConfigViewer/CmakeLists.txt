@@ -1,6 +1,0 @@
- add_library{
-    ConfigViewer
-    src/ConfigViewer/ConfigViewer.h
-    src/ConfigViewer/ConfigViewer.cpp
-}
-target_include_directories(ConfigViewer PUBLIC src)

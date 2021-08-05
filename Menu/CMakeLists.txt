@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(Menu_Beta VERSION 0.4.0)
+
+add_subdirectory(Menu_exe)
+add_subdirectory(Rock)
+add_subdirectory(Fibonum)
+add_subdirectory(ChangeTheJ)

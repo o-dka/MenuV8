@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/skate/MenuV8/Menu/Fibonum/src/Fibonum/Fibonum.cpp
+iostream
+-
+Fibonum.h
+/home/skate/MenuV8/Menu/Fibonum/src/Fibonum/Fibonum.h
+
+/home/skate/MenuV8/Menu/Fibonum/src/Fibonum/Fibonum.h
+

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Menu_Beta.dir/main.cpp.o  -o Menu_Beta  -lChangeTheJ -lFibonum -lRock 

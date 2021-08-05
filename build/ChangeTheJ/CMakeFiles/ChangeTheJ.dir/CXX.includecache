@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/skate/MenuV8/Menu/ChangeTheJ/src/ChangeTheJ/ChangeTheJ.cpp
+iostream
+-
+ChangeTheJ.h
+/home/skate/MenuV8/Menu/ChangeTheJ/src/ChangeTheJ/ChangeTheJ.h
+
+/home/skate/MenuV8/Menu/ChangeTheJ/src/ChangeTheJ/ChangeTheJ.h
+
