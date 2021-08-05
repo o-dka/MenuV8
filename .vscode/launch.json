@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
       {
-        "name": "g++ build and debug active file",
+        "name": "g++ dbg",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${fileDirname}/${fileBasenameNoExtension}",
+        "program": "./MenuV8/build/Mene_exe/Menu_Beta",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",

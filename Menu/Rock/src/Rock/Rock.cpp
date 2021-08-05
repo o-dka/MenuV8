@@ -15,13 +15,34 @@
 	std::string filename = "../Configs/ConfigChanger.txt";
 	std::string readChanger, readInfo;
 */
+Rock::Rock()
+{
+	std::ifstream file;
+	file.open(filename.c_str());
+	file.ignore(80, '\n');
+	getline(file, line);// but the line is inputed here???
+	file.close();
+	std::cout << "Shoudl be a line here --->  " << line;
+	if (line[0] == '1') {
+		two = 1;
+		second = std::rand() % 8;  // Second number
+	}
+	else {
+		two = 0;
+		second = 0;
+	}
+	//srand(time(0));
+	add = std::stoi(line.substr(8));  // Error here,says that line is empty, debugger also shows that its empty
+	mult = std::stoi(line.substr(10));
+	first = std::stoi(line.substr(5, 6));
+	won = std::stoi(line.substr(2, 3)) + second;
+}
 void Rock::Reader()
 {
 	std::ifstream fileChanger(filename.c_str());
 	std::ifstream fileInfo(filenameInfo.c_str());
 	getline(fileChanger, readChanger);
 	std::cout << "Shoudl be a line here --->  " << readChanger;
-	fileChanger.close();
 	for (int i = 0; i < 12; i++) {
 		if (c == 5)
 			break;
@@ -36,33 +57,13 @@ void Rock::Reader()
 	}
 	c = 0;
 }
-Rock::Rock()
-{
-	std::fstream file(filename.c_str(), std::ios::in);
-	getline(file, line);
-	std::cout << "Shoudl be a line here --->  " << line;
-	file.close();
-	if (line[0] == '1') {
-		two = 1;
-		second = std::rand() % 8;  // Second number
-	}
-	else {
-		two = 0;
-		second = 0;
-	}
-	srand(time(0));
-	add = std::stoi(line.substr(8));  // Error here
-	mult = std::stoi(line.substr(10));
-	first = std::stoi(line.substr(5, 6));
-	won = std::stoi(line.substr(2, 3)) + second;
-}
 void Rock::Writer(std::string input, std::string change)
 {
 	std::string choose, check;
-	std::fstream file(filename.c_str());
-	std::getline(file, input);
-	std::getline(file, check);
-	file.close();
+	std::fstream fileC(filename.c_str());
+	std::getline(fileC, input);
+	std::getline(fileC, check);
+	fileC.close();
 	if (check == "1")  // checks if the file has been changed before
 		std::cout << "Settings changed already, starting..\n";
 	else {
@@ -88,10 +89,11 @@ void Rock::Writer(std::string input, std::string change)
 			std::cout << "Type quit to end, or type cont to continue changing. \n " << input << "\n";
 			std::cin >> choose;
 		}
-		file.open("file.txt", std::ofstream::out | std::ofstream::trunc);  // deletes contents of a file, writes new ones
-		file << input << "\n1";
+		fileC.open("Configs/ConfigChanger.txt", std::ofstream::out | std::ofstream::trunc);  // deletes contents of a file, writes new ones
+		fileC << input << "\n1";
 		std::cout << "Changed to : \n"
 			  << input << "\n";
+		fileC.close();
 	}
 }
 

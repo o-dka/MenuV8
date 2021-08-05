@@ -77,7 +77,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -104,28 +104,28 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "ChangeTheJ::@e4a53d84ae40dee65b72",
-					"jsonFile" : "target-ChangeTheJ-c3368847bee4cf0b9a60.json",
+					"jsonFile" : "target-ChangeTheJ-Debug-634cb5f79815f697ab65.json",
 					"name" : "ChangeTheJ",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "Fibonum::@a2f525d22c9b1e40f54c",
-					"jsonFile" : "target-Fibonum-c6478473df3a0d567446.json",
+					"jsonFile" : "target-Fibonum-Debug-66520835b77b466cfc27.json",
 					"name" : "Fibonum",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Menu_Beta::@bde45f608cf6ce41b2af",
-					"jsonFile" : "target-Menu_Beta-c8c605256a0fba6b3df2.json",
+					"jsonFile" : "target-Menu_Beta-Debug-3e616938067e2d98f340.json",
 					"name" : "Menu_Beta",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Rock::@2cbf3f639a48c991c82f",
-					"jsonFile" : "target-Rock-876e425eefaef106841f.json",
+					"jsonFile" : "target-Rock-Debug-4ae1afa4a0f61301835a.json",
 					"name" : "Rock",
 					"projectIndex" : 0
 				}
@@ -141,6 +141,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 0
+		"minor" : 2
 	}
 }
