@@ -17,21 +17,18 @@
 */
 Rock::Rock()
 {
-	std::ifstream file;
-	file.open(filename.c_str());
-	file.ignore(80, '\n');
+	std::ifstream file(filename.c_str());
 	getline(file, line);// but the line is inputed here???
 	file.close();
-	std::cout << "Shoudl be a line here --->  " << line;
 	if (line[0] == '1') {
 		two = 1;
+		srand(time(0));
 		second = std::rand() % 8;  // Second number
 	}
 	else {
 		two = 0;
 		second = 0;
 	}
-	//srand(time(0));
 	add = std::stoi(line.substr(8));  // Error here,says that line is empty, debugger also shows that its empty
 	mult = std::stoi(line.substr(10));
 	first = std::stoi(line.substr(5, 6));

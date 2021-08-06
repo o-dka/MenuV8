@@ -16,14 +16,13 @@ int main()
 		switch (input) {
 			case 1: {
 				std::cout << "----------------------ChangeTheJ----------------------\n";
-				int x1, y1, z1, d1;
-				ChangeTheJ(x1, y1, z1, d1);
+				int des, cur, minus, times;
+				ChangeTheJ(times, minus, des, cur);
 			} break;
 			case 2: {
 				std::cout << "----------------------Fibonum----------------------\n";
-				int counter = 1, iterator = 1;
-				long long present = 1, past1 = 1, past2 = 1;
-				Fibonum(counter, present, past1, past2, iterator);
+				int counter;
+				Fibonum(counter);
 			} break;
 			case 3: {
 				std::cout << "--------------------Rock-Game--------------------\n";
@@ -32,7 +31,7 @@ int main()
 				Rock game;
 				game.Reader();
 				game.Writer(input, change);
-				while ((game.first + game.second) <= game.won) 
+				while ((game.first + game.second) <= game.won)
 					game.DoIt(entry, choose);
 				switch (game.CurrSh) {
 					case 1:
