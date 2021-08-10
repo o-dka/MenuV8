@@ -7,21 +7,21 @@
 Rock::Rock()
 {
 	std::ifstream file(filename.c_str());
-	std::getline(file, line);  // but the line is inputed here???
+	std::getline(file, line);  // the line is inputed here 
 	file.close();
 	if (line[1] == '1') {
 		two = 1;
 		srand(time(0));
-		second = std::rand() % 8;  // Second number
+		second = std::rand() % 8;  // Second pile of rocks generated here , it is possible to get a second number equal to zero 
 	}
 	else {
 		two = 0;
 		second = 0;
 	}
-	add = std::stoi(line.substr(9));  // Error here,says that line is empty, debugger also shows that its empty
-	mult = std::stoi(line.substr(11));
-	first = std::stoi(line.substr(6, 7));
-	won = std::stoi(line.substr(3, 4)) + second;
+	add = std::stoi(line.substr(9));  // to add to 
+	mult = std::stoi(line.substr(11)); // multiply by 
+	first = std::stoi(line.substr(6, 7));  // first pile of rocks
+	won = std::stoi(line.substr(3, 4)) + second; // how much rock you should have to win the game 
 }
 void Rock::Reader()
 {
@@ -29,13 +29,13 @@ void Rock::Reader()
 	std::ifstream fileInfo(filenameInfo.c_str());
 	getline(fileChanger, readChanger);
 	for (int i = 0; i < 12; i++) {
-		if (c == 5)
+		if (c == 5) // Because the fileInfo has only 5 lines, the function reads for five times, changing the line to the next every time 
 			break;
 		getline(fileInfo, readInfo);
 		if (readChanger[i + 1] == ' ')
-			std::cout << readInfo << readChanger[i] << "\n\n";
+			std::cout << readInfo << readChanger[i] << "\n\n"; // reads only one char if the next one is empty
 		else {
-			std::cout << readInfo << readChanger[i + 1] << readChanger[i + 2] << "\n\n";
+			std::cout << readInfo << readChanger[i + 1] << readChanger[i + 2] << "\n\n"; // else , it reads the current one and the one after
 			i += 2;
 		}
 		c++;
