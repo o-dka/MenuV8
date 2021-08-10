@@ -1,3 +1,0 @@
-/home/skate/MenuV8/build/main/CMakeFiles/rebuild_cache.dir
-/home/skate/MenuV8/build/main/CMakeFiles/edit_cache.dir
-/home/skate/MenuV8/build/main/CMakeFiles/Menu_Beta.dir

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libRock.a  CMakeFiles/Rock.dir/src/Rock/Rock.cpp.o
-/usr/bin/ranlib libRock.a

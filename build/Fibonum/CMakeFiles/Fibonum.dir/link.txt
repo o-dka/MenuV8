@@ -1,2 +1,0 @@
-/usr/bin/ar qc libFibonum.a  CMakeFiles/Fibonum.dir/src/Fibonum/Fibonum.cpp.o
-/usr/bin/ranlib libFibonum.a

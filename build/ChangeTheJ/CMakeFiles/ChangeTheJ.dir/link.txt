@@ -1,2 +1,0 @@
-/usr/bin/ar qc libChangeTheJ.a  CMakeFiles/ChangeTheJ.dir/src/ChangeTheJ/ChangeTheJ.cpp.o
-/usr/bin/ranlib libChangeTheJ.a
