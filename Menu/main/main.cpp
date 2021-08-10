@@ -17,7 +17,7 @@ int main()
 			case 1: {
 				std::cout << "----------------------ChangeTheJ----------------------\n";
 				int des, cur, minus, times;
-				ChangeTheJ(times, minus, des, cur);
+				ChangeTheJ(times, minus, des, cur); 
 			} break;
 			case 2: {
 				std::cout << "----------------------Fibonum----------------------\n";
@@ -31,9 +31,9 @@ int main()
 				Rock game;
 				game.Reader();
 				game.Writer(sinput, change);
-				while ((game.first + game.second) <= game.won)
+				while ((game.first + game.second) <= game.won) // the game is played until the specified amount of rocks in the pile(s) is reached
 					game.DoIt(entry, choose);
-				switch (game.CurrSh) {
+				switch (game.CurrSh) { // checks which player is playing and says if they won or not
 					case 1:
 						std::cout << "\nPlayer1 won!! \n";
 						break;
