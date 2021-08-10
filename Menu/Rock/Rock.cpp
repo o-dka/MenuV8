@@ -29,7 +29,7 @@ void Rock::Reader()
 	std::ifstream fileInfo(filenameInfo.c_str());
 	getline(fileChanger, readChanger);
 	for (int i = 0; i < 12; i++) {
-		if (c == 5) // Because the fileInfo has only 5 lines, the function reads for five times, changing the line to the next every time 
+		if (c == 5) // Because the fileInfo has only 5 lines, the function reads for five times, changing the line to the next one every time 
 			break;
 		getline(fileInfo, readInfo);
 		if (readChanger[i + 1] == ' ')
@@ -145,3 +145,4 @@ void Rock::DoIt(int entry, int choose)
 			break;
 	}
 }
+				
