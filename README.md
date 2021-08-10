@@ -14,11 +14,11 @@
 --------
 ### To run on linux(0.5+):
 
-* Download zip of this repos and unpack (preferably)in the home directory or `git clone` in the home directory.
+* Download zip of this repository and unpack it  (preferably) in the home directory or `git clone` in the home directory.
 * `cd  ~/MenuV8` and `chmod +x build.sh`
 * Run `./build.sh`
 * `cd build ` and launch the menu `./Menu_V_Eight`.
 ---------------------------------------------------------
 Enjoy!
 
-If you have any questions ,feel free to ask them in issues.
+If you have any questions ,feel free to ask them in the issues.
