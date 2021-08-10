@@ -1,0 +1,5 @@
+two sets of tocks,the second set will be randomized . (1/0) [bool]- .
+rocks to win(if the first line = 1, than the value  will be a sum of sets(it will be written out)) (10>n<99). [int]- .
+rocks in the begining. 0 > n < 90 [int]- .
+How much rocks you can add per step(0>n<10). [int]- .
+How much rocks you can multiply per step.(1>n<10) [int]- .

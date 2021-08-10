@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "ChangeTheJ/libChangeTheJ.a"
+			"path" : "Fibonum/libFibonum.a"
 		}
 	],
 	"backtrace" : 1,
@@ -11,12 +11,11 @@
 	{
 		"commands" : 
 		[
-			"add_library",
-			"target_include_directories"
+			"add_library"
 		],
 		"files" : 
 		[
-			"ChangeTheJ/CMakeLists.txt"
+			"Fibonum/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -28,12 +27,6 @@
 				"file" : 0,
 				"line" : 1,
 				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 6,
-				"parent" : 0
 			}
 		]
 	},
@@ -43,14 +36,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"path" : "D:/codez/VscodeCompatable/Gitoff/MenuV8/Menu/ChangeTheJ/src"
+					"fragment" : " "
 				}
 			],
 			"language" : "CXX",
@@ -60,13 +46,13 @@
 			]
 		}
 	],
-	"id" : "ChangeTheJ::@e4a53d84ae40dee65b72",
-	"name" : "ChangeTheJ",
-	"nameOnDisk" : "libChangeTheJ.a",
+	"id" : "Fibonum::@a2f525d22c9b1e40f54c",
+	"name" : "Fibonum",
+	"nameOnDisk" : "libFibonum.a",
 	"paths" : 
 	{
-		"build" : "ChangeTheJ",
-		"source" : "ChangeTheJ"
+		"build" : "Fibonum",
+		"source" : "Fibonum"
 	},
 	"sourceGroups" : 
 	[
@@ -89,13 +75,13 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "ChangeTheJ/src/ChangeTheJ/ChangeTheJ.h",
+			"path" : "Fibonum/Fibonum.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "ChangeTheJ/src/ChangeTheJ/ChangeTheJ.cpp",
+			"path" : "Fibonum/Fibonum.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

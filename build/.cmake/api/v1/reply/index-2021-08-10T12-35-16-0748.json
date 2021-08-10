@@ -3,39 +3,38 @@
 	{
 		"generator" : 
 		{
-			"multiConfig" : false,
-			"name" : "MinGW Makefiles"
+			"name" : "Ninja"
 		},
 		"paths" : 
 		{
-			"cmake" : "C:/Program Files/CMake/bin/cmake.exe",
-			"cpack" : "C:/Program Files/CMake/bin/cpack.exe",
-			"ctest" : "C:/Program Files/CMake/bin/ctest.exe",
-			"root" : "C:/Program Files/CMake/share/cmake-3.19"
+			"cmake" : "/usr/bin/cmake",
+			"cpack" : "/usr/bin/cpack",
+			"ctest" : "/usr/bin/ctest",
+			"root" : "/usr/share/cmake-3.16"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 19,
-			"patch" : 0,
-			"string" : "3.19.0",
+			"minor" : 16,
+			"patch" : 3,
+			"string" : "3.16.3",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-fa6ed59f09f744ef29ec.json",
+			"jsonFile" : "codemodel-v2-2750d82c284ace86d491.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 2
+				"minor" : 0
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-501542bc38dee3dbdd5c.json",
+			"jsonFile" : "cache-v2-10b99302dce1a2a41e58.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -59,12 +58,16 @@
 					{
 						"kind" : "codemodel",
 						"version" : 2
+					},
+					{
+						"kind" : "toolchains",
+						"version" : 1
 					}
 				],
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-501542bc38dee3dbdd5c.json",
+						"jsonFile" : "cache-v2-10b99302dce1a2a41e58.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -73,13 +76,16 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-fa6ed59f09f744ef29ec.json",
+						"jsonFile" : "codemodel-v2-2750d82c284ace86d491.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
 							"major" : 2,
-							"minor" : 2
+							"minor" : 0
 						}
+					},
+					{
+						"error" : "unknown request kind 'toolchains'"
 					}
 				]
 			}

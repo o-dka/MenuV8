@@ -1,4 +1,2 @@
-#ifndef CHANGETHEJ_H_
-#define CHANGETHEJ_H_
+#pragma once
 void ChangeTheJ(int divn, int subn, int desn, int curn);
-#endif

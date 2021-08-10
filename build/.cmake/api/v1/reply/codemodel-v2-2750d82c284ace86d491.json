@@ -17,7 +17,25 @@
 						"string" : "3.0.0"
 					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Rock",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Rock",
+					"targetIndexes" : 
+					[
+						3
+					]
 				},
 				{
 					"build" : "ChangeTheJ",
@@ -46,23 +64,9 @@
 					[
 						1
 					]
-				},
-				{
-					"build" : "Menu_exe",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.0.0"
-					},
-					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "Menu_exe",
-					"targetIndexes" : 
-					[
-						2
-					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -73,36 +77,44 @@
 						2,
 						3
 					],
-					"name" : "Menu_Beta",
+					"name" : "Menu_V_Eight",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 1,
+					"directoryIndex" : 2,
 					"id" : "ChangeTheJ::@e4a53d84ae40dee65b72",
-					"jsonFile" : "target-ChangeTheJ-Debug-7e2169833be3a8600538.json",
+					"jsonFile" : "target-ChangeTheJ-61f5b1670f7c60f2dd06.json",
 					"name" : "ChangeTheJ",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 2,
+					"directoryIndex" : 3,
 					"id" : "Fibonum::@a2f525d22c9b1e40f54c",
-					"jsonFile" : "target-Fibonum-Debug-9000387efeabe1126e93.json",
+					"jsonFile" : "target-Fibonum-bc0a08ae466512755a30.json",
 					"name" : "Fibonum",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 3,
-					"id" : "Menu_Beta::@bde45f608cf6ce41b2af",
-					"jsonFile" : "target-Menu_Beta-Debug-0419d40f54c7322e600b.json",
-					"name" : "Menu_Beta",
+					"directoryIndex" : 0,
+					"id" : "Menu_V_Eight::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Menu_V_Eight-997e070cbdea462cace1.json",
+					"name" : "Menu_V_Eight",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Rock::@2cbf3f639a48c991c82f",
+					"jsonFile" : "target-Rock-bb577396568bf0b2731f.json",
+					"name" : "Rock",
 					"projectIndex" : 0
 				}
 			]
@@ -111,12 +123,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/codez/VscodeCompatable/Gitoff/MenuV8/build",
-		"source" : "D:/codez/VscodeCompatable/Gitoff/MenuV8/Menu"
+		"build" : "/home/skate/MenuV8/build",
+		"source" : "/home/skate/MenuV8/Menu"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 2
+		"minor" : 0
 	}
 }
