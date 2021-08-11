@@ -9,7 +9,7 @@ Rock::Rock()
 	std::ifstream file(filename.c_str());
 	std::getline(file, line);  // but the line is inputed here???
 	file.close();
-	if (line[1] == '1') {
+	if (line[0] == '1') {
 		two = 1;
 		srand(time(0));
 		second = std::rand() % 8;  // Second number
@@ -18,10 +18,10 @@ Rock::Rock()
 		two = 0;
 		second = 0;
 	}
-	add = std::stoi(line.substr(9));  // Error here,says that line is empty, debugger also shows that its empty
-	mult = std::stoi(line.substr(11));
-	first = std::stoi(line.substr(6, 7));
-	won = std::stoi(line.substr(3, 4)) + second;
+	add = std::stoi(line.substr(8));  // Error here,says that line is empty, debugger also shows that its empty
+	mult = std::stoi(line.substr(10));
+	first = std::stoi(line.substr(5, 6));
+	won = std::stoi(line.substr(2, 3));
 }
 void Rock::Reader()
 {
@@ -33,9 +33,9 @@ void Rock::Reader()
 			break;
 		getline(fileInfo, readInfo);
 		if (readChanger[i + 1] == ' ')
-			std::cout << readInfo << readChanger[i] << "\n\n";
+			std::cout << readInfo << readChanger[i] << "\n";
 		else {
-			std::cout << readInfo << readChanger[i + 1] << readChanger[i + 2] << "\n\n";
+			std::cout << readInfo << readChanger[i + 1] << readChanger[i + 2] << "\n";
 			i += 2;
 		}
 		c++;

@@ -1,0 +1,7 @@
+  ___  _  _                           
+ | __|(_)| |__  ___  _ _  _  _  _ __  
+ | _| | || '_ \/ _ \| ' \| || || '  \ 
+ |_|  |_||_.__/\___/|_||_|\_,_||_|_|_|
+                                      
+The Fibonum function is does what it says. It calculates numbers out of the Fibonacci sequene.
+The amount of numbers is specifed by the user, the amount can't be more than or equal to 93.

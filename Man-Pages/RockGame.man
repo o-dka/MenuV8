@@ -1,0 +1,27 @@
+  ___           _      ___                   
+ | _ \ ___  __ | |__  / __| __ _  _ __   ___ 
+ |   // _ \/ _|| / / | (_ |/ _` || '  \ / -_)
+ |_|_\\___/\__||_\_\  \___|\__,_||_|_|_|\___|
+                                             
+
+This game is inspired by an actual test task that i got.
+In the game there are two players, which try to collect as much rocks in to the pile, the first one to reach the win state, wins.
+The maximum amount of the rocks(or rocks to win variable) and if there is a second pile or not(two variable), can be modified by the user.
+In the game you can modify the pile in two ways : either add a specifed number(can be edited by the player(add variable)) or multiply it by an x (mult varaible).
+The config file can be modified only once(!), I thought that  most people won't play this game more than once, so editing the config is made pretty much meaningless.
+If you want to edit the config yourself, you can do it in two ways:
+
+1. Go to your build directory and locate Changer.txt , that's the config. 
+	1.2. Edit the last line so it will say 0 instead of 1. 
+	1.3. Launch the Menu and navigate to the Rock Game. 
+	1.4. Edit the file in cli.
+
+2. Go to your build directory and locate Changer.txt and Info files.
+ 	2.1 Edit the Changer.txt while consulting the Info file.
+	
+	2.2 The first number is the boolean option (two), when set to 1 , the Game will generate a number from 0 to 8, the score will be a sum of two numbers.
+	2.3 The second number is the amount of rocks you need to win, the number should always be above 11 and less than 99. 
+	2.4 The third number is the amount of rocks you have at the begging, the number also should be above 10, but less than 90.
+	2.5 The fourth number is the amount of rocks you can add to the pile, the number should be above 0 and less than 10.
+	2.6 The fith number is the amount by which you can multiply the rocks by, the number should be above 1 and less than 5
+
