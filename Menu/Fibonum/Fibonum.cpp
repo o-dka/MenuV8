@@ -4,9 +4,9 @@
 #include "Fibonum.h"
 void Fibonum(int count)
 {
-	long presentF;
-	long pastF1;
-	long pastF2;
+	long long presentF;
+	long long pastF1;
+	long long pastF2;
 	std::cout << "How much of the fibonachi number you want to see?\n";
 	presentF = 1;
 	pastF1 = 1, pastF2 = 1;
