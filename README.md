@@ -3,8 +3,6 @@
 
 ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/o-dka/MenuV8/0.5.1-beta?style=flat-square)
 
- This is  a separate Menu repository to re-do the project from the ground up.
- 
  -------
 ### To run for Windows(for now only pre-version 0.5):
 
