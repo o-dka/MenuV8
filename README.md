@@ -1,9 +1,16 @@
 # MenuV8
 ![GitHub repo size](https://img.shields.io/github/repo-size/BreenBrain/MenuV8?style=flat-square)
 
-![GitHub commits since tagged version](https://img.shields.io/github/commits-since/o-dka/MenuV8/0.5.1-beta?style=flat-square)
+![GitHub commits since tagged version](https://img.shields.io/github/commits-since/o-dka/MenuV8/0.5-beta)
 
+ This is  a separate Menu repository to re-do the project from the ground up.
+ 
  -------
+ ### Prerequisites :
+ * gcc *
+ * cmake 
+ * ninja 
+ ---
 ### To run for Windows(for now only pre-version 0.5):
 
 *  Download the Menu_Beta.exe file to the "Downloads" directory
@@ -20,3 +27,5 @@
 Enjoy!
 
 If you have any questions ,feel free to ask them in the issues.
+
+* ##### (clang may work, I didn't check)
