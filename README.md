@@ -7,7 +7,6 @@
  
  -------
  ### Prerequisites :
- * gcc *
  * cmake 
  * ninja 
  ---
@@ -28,4 +27,3 @@ Enjoy!
 
 If you have any questions ,feel free to ask them in the issues.
 
-  ##### *(clang may work, I didn't check)
