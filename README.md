@@ -19,7 +19,7 @@
 
 1.  Download zip of this repository and unpack it in the `C:\` directory with `MenuV8` name.
 2.   Type into cmd: `cd C:\MenuV8` and  `build.bat`
-3.  After it built, the MenuV8 executable should be in the `\build\Release` directory, find it and run it.
+3.  After it built, run Menu_V_Eight.exe.
 
 --------
 ### To run on Linux:
