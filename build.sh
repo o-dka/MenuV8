@@ -16,6 +16,6 @@ if [ "$ncheck" = "/usr/bin/ninja" ]; then
 	echo "Check /build direcotory on Menu_V_Eight file, and launch it!"
 
 else 
-	echo"\n It appears that our end user didn't read the git repo, too bad, install ninja!!""
+	echo "\n It appears that our end user didn't read the git repo, too bad, install ninja!!""
         return 1
 fi
