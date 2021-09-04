@@ -7,6 +7,7 @@
  
  -------
  ### Prerequisites :
+
  #### If you are on Linux:
  * cmake 
  * ninja 
@@ -28,5 +29,6 @@
 3. Run `./build.sh`
 4.  `cd build ` and launch the menu `./Menu_V_Eight`.
 ---------------------------------------------------------
+
 
 If you have any questions, feel free to ask them in the issues.
