@@ -17,5 +17,5 @@ if [ "$ncheck" = "/usr/bin/ninja" ]; then
 
 else 
 	echo"\n It appears that our end user didn't read the git repo, too bad, install ninja!!""
-        return 2
+        return 1
 fi
