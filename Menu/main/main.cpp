@@ -31,7 +31,7 @@ int main()
 				Rock game;
 				game.Reader();
 				game.Writer(sinput, change);
-				while ((game.first + game.second) <= game.won) // the game is played until the specified amount of rocks in the pile(s) is reached
+				while ( game.won > (game.first + game.second)) // the game is played until the specified amount of rocks in the pile(s) is reached
 					game.DoIt(entry, choose);
 				switch (game.CurrSh) { // checks which player is playing and says if they won or not
 					case 1:
