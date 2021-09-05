@@ -3,7 +3,7 @@ echo "Checking if cmake and ninja are installed."
 ncheck=$(which ninja)
 cmcheck=$(which cmake)
 
-if [ "$cmcheck" = "/usr/bin/cmake"  ] || [ "$cmcheck" ="/bin/cmake" ]; then
+if [ "$cmcheck" = "/usr/bin/cmake"  ] || [ "$cmcheck" = "/bin/cmake" ]; then
       echo  "\nCmake found ,checking ninja."
 else
       echo -n "Cmake not found, install it!"
