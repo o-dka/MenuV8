@@ -23,7 +23,7 @@ Rock::Rock()
 	add = std::stoi(line.substr(8));  // to add to 
 	mult = std::stoi(line.substr(10)); // multiply by 
 	first = std::stoi(line.substr(5, 6)); // first pile of rocks
-	won = std::stoi(line.substr(3, 4)) + second; // how much rock you should have to win the gam
+	won = std::stoi(line.substr(2, 3)); // how much rock you should have to win the game
 
 }
 void Rock::Reader()
@@ -82,6 +82,13 @@ void Rock::Writer(std::string input, std::string change)
 			  << input << "\n";
 		fileC.close();
 	}
+		if ((first + second) > won){
+		std:: cout<<"The interactive numbers are bigger than the 'won' number, adjusting the 'won' number... \n";
+		int diff = (first+second) - won;
+		won = won +(diff * 2);
+		std::cout<<"Changed the 'won' number to:"<<won<<"\n";
+	}
+
 }
 
 void Rock::DoIt(int entry, int choose)
