@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdlib>
+#include <ctime>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -11,12 +12,12 @@ class Rock {
 	std::string filenameInfo = "Info";
 	std::string filename = "Changer.txt";
 	std::string readChanger, readInfo, line;
-
     public:
 	Rock();
 	void Reader();
 	void Writer(std::string input, std::string change);
 	void DoIt(int entry, int choose);
+	void Check();
 	int won = 0, first = 0, second = 0;
 	int CurrSh = 1; // the game always starts with the first player
 };
