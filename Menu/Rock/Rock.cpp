@@ -48,7 +48,6 @@ void Rock::Writer(std::string input, std::string change)
 	std::string choose, check;
 	std::fstream fileC(filename.c_str());
 	std::getline(fileC, input);
-	std::getline(fileC, check);
 	fileC.close();
 		while (choose != "quit") {
 		INPUT:
@@ -73,7 +72,7 @@ void Rock::Writer(std::string input, std::string change)
 			std::cin >> choose;
 		}
 		fileC.open("Changer.txt", std::ofstream::out | std::ofstream::trunc);  // deletes contents of a file, writes new ones
-		fileC << input << "\n1";
+		fileC << input << "\n";
 		std::cout << "Changed to : \n"
 			  << input << "\n";
 		fileC.close();
