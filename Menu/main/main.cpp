@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <ctime>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -31,6 +32,7 @@ int main()
 				Rock game;
 				game.Reader();
 				game.Writer(sinput, change);
+				game.Check(); // checks the integrety of the input files.
 				while ( game.won > (game.first + game.second)) // the game is played until the specified amount of rocks in the pile(s) is reached
 					game.DoIt(entry, choose);
 				switch (game.CurrSh) { // checks which player is playing and says if they won or not

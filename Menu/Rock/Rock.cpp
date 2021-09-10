@@ -15,11 +15,10 @@ Rock::Rock()
 		srand(time(0));
 		second = std::rand() % 8;  // Second pile of rocks generated here , it is possible to get a second number equal to zero 
 	}
-	else {
+	else if (line[0] == '0') {
 		two = 0;
 		second = 0;
 	}
-
 	add = std::stoi(line.substr(8));  // to add to 
 	mult = std::stoi(line.substr(10)); // multiply by 
 	first = std::stoi(line.substr(5, 6)); // first pile of rocks
@@ -51,9 +50,6 @@ void Rock::Writer(std::string input, std::string change)
 	std::getline(fileC, input);
 	std::getline(fileC, check);
 	fileC.close();
-	if (check == "1")  // checks if the file has been changed before
-		std::cout << "Settings changed already, starting..\n";
-	else {
 		while (choose != "quit") {
 		INPUT:
 			std::cout << "what to change?\n";
@@ -81,16 +77,22 @@ void Rock::Writer(std::string input, std::string change)
 		std::cout << "Changed to : \n"
 			  << input << "\n";
 		fileC.close();
+}
+void Rock::Check(){
+	std::cout<<"Checking the config values\n";
+	if(first > 90 ) {
+		first = (90-first) * 3;	
+		std::cout<< "Changed first to:"<<first<<"\n";
 	}
-		if ((first + second) > won){
-		std:: cout<<"The interactive numbers are bigger than the 'won' number, adjusting the 'won' number... \n";
-		int diff = (first+second) - won;
-		won = won +(diff * 2);
+	if (first <= 0){
+		first = 67;
+		std::cout<< "Changed first to:"<<first<<"\n";
+	}
+	if ((first + second) > won) {
+		won = won +((first+second) - won * 2);
 		std::cout<<"Changed the 'won' number to:"<<won<<"\n";
 	}
-
 }
-
 void Rock::DoIt(int entry, int choose)
 {
 	ct++;
