@@ -13,7 +13,7 @@ fi
 if [ "$ncheck" = "/usr/bin/ninja" ] || [ "$ncheck" = "/bin/ninja" ]; then
       echo  "\nNinja found  starting compilation ..."
       cmake -G Ninja -S Menu/ -B build/ && cd build && ninja
-      echo "Check %cd% directory for Menu_V_Eight file, and launch it!"
+      echo "Check " $PWD "/build directory for Menu_V_Eight file, and launch it!"
       
 else
        echo -n "Ninja not found, install it!"
