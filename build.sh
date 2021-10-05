@@ -1,4 +1,5 @@
 #!/bin/sh
+
 echo "Checking if cmake and ninja are installed."
 ncheck=$(which ninja)
 cmcheck=$(which cmake)
@@ -12,14 +13,9 @@ fi
 if [ "$ncheck" = "/usr/bin/ninja" ] || [ "$ncheck" = "/bin/ninja" ]; then
       echo  "\nNinja found  starting compilation ..."
       cmake -G Ninja -S Menu/ -B build/ && cd build && ninja
-      echo "Check /build direcotory on Menu_V_Eight file, and launch it!"
-
+      echo "Check %cd% directory for Menu_V_Eight file, and launch it!"
+      
 else
        echo -n "Ninja not found, install it!"
      break
 fi
-~
-~
-~
-~
-~
