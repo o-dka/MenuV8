@@ -1,5 +1,6 @@
 # MenuV8
-![GitHub repo size](https://img.shields.io/github/repo-size/o-dka/MenuV8?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/o-dka/MenuV8?style=flat-square)\
+This repository has become read-only, if you want to download the project check the releases page.
  ### Prerequisites :
 
  #### If you are on Linux:
